@@ -1,0 +1,44 @@
+{
+  "created_date": "2026-11-05",
+  "generation_tool": "Built-in image_gen.imagegen",
+  "use_case": "photorealistic-natural",
+  "note": "AI-generated concept images for the Joyful Responsible Abundance website. Scenes represent proposed possibilities and do not document actual events, venues, installations or institutional participation.",
+  "images": [
+    {
+      "file": "community-hero.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "transparent_background": false,
+      "prompt": "Use case: photorealistic-natural. Asset type: wide landscape editorial website hero, aspect ratio 3:2 or 16:9. Create a richly detailed photographic-style concept image of an optimistic, serious Australian coastal community public commons at golden hour. Real people of varied ages and backgrounds are learning and making things together in and around a sensitively designed low-rise timber-and-stone community library and open courtyard. Show a few people collaborating at a table with ordinary laptops and paper sketches, others tending native coastal plants, with a beautiful Australian bay and coastal ecology beyond. Human warmth, agency, curiosity, practical knowledge and belonging are the visual story. Beautiful authentic architectural photography, subtle documentary candid gestures, natural imperfect textures, soft amber light, ocean blue and native vegetation. Include one small butterfly, incidental and naturally scaled, near foreground vegetation. Optimistic near-future design grounded in plausible Australian life. Broad landscape composition, considered depth, tangible human scene. No text, no logos, no captions, no watermark, no glowing holograms, no giant screens, no robots, no futuristic neon visual clichés. The butterfly should reward a close look rather than dominate the composition.",
+      "sha256": "7d88895db156c05bf487590364c4b6c2b0be80af41a0b72c61670820ad78c4dd",
+      "alt": "People share learning and tend coastal plants beside an imagined Australian community commons.",
+      "visual_review": "Inspected the generated image. No text or logos. Natural scene, consistent hands and faces at website scale. Butterfly subtle in the first two images. Festival composition has a broad inclusive gathering and distant stage."
+    },
+    {
+      "file": "local-compute.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "transparent_background": false,
+      "prompt": "Use case: photorealistic-natural. Asset type: wide landscape editorial website image, aspect ratio 3:2 or 16:9. Create a high-quality photographic-style concept image of a local Australian community computing workshop in daytime. A warmly designed public learning room built from timber, brick and practical materials adjoins a secure tidy computing room. The scene shows three to five people of different ages collaborating with an experienced technician, learning useful skills beside one neatly installed rack-scale computing cabinet visible through a glazed partition. Ordinary useful screens have abstract unlettered content. The computing equipment is substantial and credible, with sensible cabling and building services. Warm wooden workbenches and a light open courtyard give this place a humane, approachable character. Focus on people owning and understanding their tools, practical technical competence, daylight, craftsmanship, and public learning. One small butterfly can be glimpsed outside through an open courtyard door, naturally scaled and subtle. Broad landscape composition, natural candid body language, photographic detail and honest textures. No text, no brands, no logos, no watermark, no holograms, no robots, no neon, no science-fiction control room, no extra butterfly motifs.",
+      "sha256": "ad9435d6c4095000b7e613a41b936737e0d892097994dee4263c6b7fa26ea994",
+      "alt": "A community group learns computer hardware beside a secure local computing cabinet and open courtyard.",
+      "visual_review": "Inspected the generated image. No text or logos. Natural scene, consistent hands and faces at website scale. Butterfly subtle in the first two images. Festival composition has a broad inclusive gathering and distant stage."
+    },
+    {
+      "file": "global-festival.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "transparent_background": false,
+      "prompt": "Use case: photorealistic-natural. Asset type: wide landscape editorial concept image for a serious optimistic whole-system website, aspect ratio 3:2 or 16:9. Imagine a proposed worldwide festival in July 2035, connected to Live Aid's fiftieth anniversary and three continuous days exploring Past, Present and Future. Show one beautiful imagined outdoor ocean-side festival gathering as part of a global network: culturally diverse adults and families sharing music, art and conversation, a modest distant performance stage integrated into the landscape, people dancing naturally, a quiet foreground group looking at a collaborative sculpture and talking, and generous open pathways around landscape and native planting. Broad inclusive joyful humanity, creative public participation and shared civic purpose. The scale should feel ambitious and public, yet grounded in a real place and believable human activity. Landscape and sea, warm late-afternoon light, beautiful documentary architectural/event photography, gentle natural colour, distinct real faces and bodies. A tiny butterfly near a foreground plant is optional and should be barely noticeable. There should be no readable text, no event signage, no logos, no flags, no watermark, no holograms, no robots, no dystopian crowd, no authoritarian spectacle, and no depiction claiming a real event has already happened. A photoreal conceptual future scene with visual depth and warmth.",
+      "sha256": "348a73df5eab656d05029919157bb3cce7c0ace6ad2919984b8537919c736727",
+      "alt": "An imagined coastal festival brings people together for music, art and conversation.",
+      "visual_review": "Inspected the generated image. No text or logos. Natural scene, consistent hands and faces at website scale. Butterfly subtle in the first two images. Festival composition has a broad inclusive gathering and distant stage."
+    }
+  ]
+}

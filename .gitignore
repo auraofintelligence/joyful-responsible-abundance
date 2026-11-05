@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+assets/images/*.png
+.DS_Store
+Thumbs.db
+*.log

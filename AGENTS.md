@@ -1,0 +1,9 @@
+# Working on this website
+
+This is an educational static GitHub Pages site by Luke Nathan Hayes. Introduce concepts carefully for readers without prior knowledge, using Australian English and concrete examples. Keep the scale and connections of the proposal visible.
+
+Edit source data and templates, then regenerate HTML with `python build.py`. Preserve the existing Public Source licence, author credit and third-party image attribution. Do not describe publicly readable repositories as open source unless their licences support that description.
+
+Keep evidence dates, source links and scenario assumptions attached to claims. The global compute comparison and the Australian rollout are different scales. The Australian proposal is 3,000 sites at A$18–19 billion. The 2035 proposal is a global festival around Live Aid’s 50th anniversary. A Protopian Gambit has 22 songs in this edition.
+
+Navigation, chapter text and references must remain accessible without JavaScript. Verify search, calculators, internal links and anchors, mobile layouts, keyboard controls and reduced-motion behaviour after relevant edits. Label generated concept imagery and credit photographs accurately.
