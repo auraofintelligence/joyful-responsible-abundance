@@ -2,6 +2,15 @@
 (() => {
   'use strict';
 
+  const backTop = document.querySelector('.back-top');
+  if (backTop) {
+    const showReturnLink = () => {
+      backTop.classList.toggle('is-floating', window.scrollY > window.innerHeight);
+    };
+    window.addEventListener('scroll', showReturnLink, { passive: true });
+    showReturnLink();
+  }
+
   const normalise = (value) => String(value || '')
     .normalize('NFKD')
     .replace(/[\u0300-\u036f]/g, '')

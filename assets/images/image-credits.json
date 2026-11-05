@@ -12,7 +12,7 @@
           1024
         ],
         "transparent_background": false,
-        "prompt": "Use case: photorealistic-natural. Asset type: wide landscape editorial website hero, aspect ratio 3:2 or 16:9. Create a richly detailed photographic-style concept image of an optimistic, serious Australian coastal community public commons at golden hour. Real people of varied ages and backgrounds are learning and making things together in and around a sensitively designed low-rise timber-and-stone community library and open courtyard. Show a few people collaborating at a table with ordinary laptops and paper sketches, others tending native coastal plants, with a beautiful Australian bay and coastal ecology beyond. Human warmth, agency, curiosity, practical knowledge and belonging are the visual story. Beautiful authentic architectural photography, subtle documentary candid gestures, natural imperfect textures, soft amber light, ocean blue and native vegetation. Include one small butterfly, incidental and naturally scaled, near foreground vegetation. Optimistic near-future design grounded in plausible Australian life. Broad landscape composition, considered depth, tangible human scene. No text, no logos, no captions, no watermark, no glowing holograms, no giant screens, no robots, no futuristic neon visual clichés. The butterfly should reward a close look rather than dominate the composition.",
+        "prompt": "Use case: photorealistic-natural. Asset type: wide landscape editorial website hero, aspect ratio 3:2 or 16:9. Create a richly detailed photographic-style concept image of an optimistic, serious Australian coastal community public commons at golden hour. Real people of varied ages and backgrounds are learning and making things together in and around a sensitively designed low-rise timber-and-stone community library and open courtyard. Show a few people collaborating at a table with ordinary laptops and paper sketches, others tending native coastal plants, with a beautiful Australian bay and coastal ecology beyond. Human warmth, agency, curiosity, practical knowledge and belonging are the visual story. Beautiful authentic architectural photography, subtle documentary candid gestures, natural imperfect textures, soft amber light, ocean blue and native vegetation. Include one small butterfly, incidental and naturally scaled, near foreground vegetation. Optimistic near-future design grounded in plausible Australian life. Broad landscape composition, considered depth, tangible human scene. No text, no logos, no captions, no watermark, no glowing holograms, no giant screens, no robots, no futuristic neon visual clichÃ©s. The butterfly should reward a close look rather than dominate the composition.",
         "sha256": "7d88895db156c05bf487590364c4b6c2b0be80af41a0b72c61670820ad78c4dd",
         "alt": "People share learning and tend coastal plants beside an imagined Australian community commons.",
         "visual_review": "Inspected the generated image. No text or logos. Natural scene, consistent hands and faces at website scale. Butterfly subtle in the first two images. Festival composition has a broad inclusive gathering and distant stage."
@@ -40,6 +40,24 @@
         "sha256": "348a73df5eab656d05029919157bb3cce7c0ace6ad2919984b8537919c736727",
         "alt": "An imagined coastal festival brings people together for music, art and conversation.",
         "visual_review": "Inspected the generated image. No text or logos. Natural scene, consistent hands and faces at website scale. Butterfly subtle in the first two images. Festival composition has a broad inclusive gathering and distant stage."
+      },
+      {
+        "created_date": "2026-11-05",
+        "generation_tool": "Built-in image_gen.imagegen",
+        "use_case": "photorealistic-natural",
+        "file": "choice-hero.png",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "bytes": 2403608,
+        "sha256": "6aa25bdc5eb2d5ff948e8240005dcaba4d7d69346eaa07fe16187ebc507a7904",
+        "prompt": "Use case: photorealistic-natural. Asset type: cinematic full-bleed landscape website hero with broad 16:9 or 21:9 composition. Create one sophisticated photographic speculative scene of an Australian coastal city and industrial landscape at blue hour. The horizon holds materially grand computing, industry and power infrastructure: huge privately enclosed data-centre buildings and carefully believable power distribution in the right-centre distance, with a dense coastal city further beyond. Keep the whole image one coherent, physically plausible landscape. In the nearer foreground a few ordinary Australian adults stand on a public overlook or walkway, considering the transformed landscape. Near them, a human-scale shared workshop, community garden and small public gathering have warm light, practical tools and restrained green life. Their presence suggests people actively deciding what to build and how to live as powerful industrial change is already under way. Consequential and uncertain yet with human agency, thoughtful and serious rather than despairing. Deep charcoal, indigo and steel blue; sparse amber windows and warm working lights; restrained natural greens. Place most visual interest in the right centre and lower image. Leave generous open dark sky and atmospheric negative space in the upper-left suitable for a white website heading. Use credible Australian coastal architecture, practical industrial design, natural adults and fine photographic textures. A single very subtle small butterfly near a foreground plant may be included if naturally visible, never as a visual motif. No text, no logos, no watermarks, no holograms, no robots, no symbol scales, no split screen, no binary two-world composition, no apocalypse, no smoke disaster, no dystopian ruin. Landscape scene, beautiful cinematographic lighting, believable depth and ambitious scale.",
+        "transparent_background": false,
+        "alt": "People look across an imagined Australian coastal city at blue hour, with a vast computing and power precinct beyond a warmly lit community workshop and garden.",
+        "note": "AI-generated concept image representing choices about a proposed future. The landscape, gathering and computing precinct are imagined.",
+        "visual_review": "Inspected generated image. Coherent coastal landscape with materially large data-centre and power infrastructure in the distance, foreground adults and warm community workshop, dark upper-left negative space. No visible text, logos, holograms or robots. Two tiny butterflies near foreground vegetation.",
+        "web_delivery": "Resized to 768 and 1536 pixels wide, converted to WebP."
       }
     ]
   },

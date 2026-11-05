@@ -6,6 +6,8 @@ Public site: https://auraofintelligence.github.io/joyful-responsible-abundance/
 
 Repository: https://github.com/auraofintelligence/joyful-responsible-abundance
 
+The visual design uses full-width photographic heroes, a dark reading palette and a restrained seam of warm and cool light. The opening contrasts pressures in the status quo with the capacities people can choose to build.
+
 ## Read and explore
 
 - `start-here.html` introduces the purpose and the whole-system connections.
@@ -39,6 +41,6 @@ Topics: `joyful-responsible-abundance`, `artificial-intelligence`, `ai-alignment
 
 ## Images and rights
 
-Three AI-generated concept scenes illustrate possible settings for the proposals. Real Minjerribah photographs are separately identified and credited on the About page. Image provenance is recorded in `assets/images/image-credits.json`.
+Four AI-generated concept scenes illustrate possible settings for the proposals. Real Minjerribah photographs are separately identified and credited on the About page. Image provenance is recorded in `assets/images/image-credits.json`.
 
 Original material is by Luke Nathan Hayes / Strange But True / Aura of Intelligence and follows `LICENCE.md`, the Strange But True Public Source Licence. Third-party photographs and linked source works retain their own rights and licences.

@@ -2,6 +2,7 @@
 from pathlib import Path
 from urllib.parse import urlsplit,unquote
 from html.parser import HTMLParser
+from html import unescape
 from collections import Counter
 import json,re
 
@@ -34,8 +35,8 @@ for name,p in pages.items():
         if 'alt' not in img:errors.append((name,'missing alt',img))
     text=(ROOT/name).read_text(encoding='utf-8')
     if '{{' in text or 'C:/Users' in text or 'G:/Github' in text:errors.append((name,'unresolved or private text'))
+    if '\u2014' in unescape(text):errors.append((name,'em dash found'))
 source=json.loads((ROOT/'data/sovereignty.json').read_text(encoding='utf-8'))
-from html import unescape
 full=(ROOT/'sovereignty-paper.html').read_text(encoding='utf-8')
 plain=re.sub(r'\s+',' ',unescape(re.sub('<[^>]+>','',full)))
 for block in source['source_blocks'][3:]:
