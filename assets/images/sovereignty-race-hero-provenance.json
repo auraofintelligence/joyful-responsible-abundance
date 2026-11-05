@@ -1,0 +1,37 @@
+{
+  "created_date": "2026-11-06",
+  "generation_tool": "Built-in image_gen.imagegen",
+  "use_case": "photorealistic-natural",
+  "file": "sovereignty-race-hero.png",
+  "title": "Industrial intelligence and national infrastructure",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "bytes": 2621729,
+  "sha256": "e51c7c6b1f66d8c4af2c391f60f17f7c63c82a20fb9904f066b22d44a07b4367",
+  "prompt": "Use case: photorealistic-natural. Asset type: original landscape 16:9 website hero concept photograph, wide cinematic composition. Believable physical materials and natural photographic detail, dark charcoal and steel blue, restrained amber and teal practical light. Quiet dark left third reserved for a white heading, main visual interest centre and right. No lettering, logos, watermarks, holograms, transparent floating displays, gardens, farms, agrarian lifestyle scenes, or fantasy neon. Not a photograph of an existing project. Primary request: a grand, materially plausible Australian industrial AI campus at night beside an urban freight port. Elevated wide oblique view across enormous low-rise data-centre halls, recognisable transformer yards and high-voltage switchgear, orderly cooling plant, service roads and communications equipment. Beyond, working container wharves, a few cranes, dock lights and an Australian city skyline establish national industrial context. Most campus buildings and visible power infrastructure occupy the centre-right. Dark open night sky and shadowed harbour edge on the left remain visually quiet. Ambitious scale, consequential contemporary infrastructure, atmospheric depth, clean air, precise engineering, no dystopian wreckage or catastrophe. Photographic architectural realism, not a stylised render.",
+  "transparent_background": false,
+  "alt": "An imagined Australian AI campus at night combines large data-centre buildings, cooling plant, a transformer yard, communications equipment and a working urban port.",
+  "caption": "An imagined Australian AI and industrial infrastructure precinct. AI-generated concept image, not a photograph of an operating project.",
+  "conceptual_status": "AI-generated concept photograph. Imagined scene, not documentary evidence of an operating facility.",
+  "visual_review": "Visually inspected. The industrial campus, substation, cooling plant and freight port occupy the centre and right; the dark harbour and sky provide quiet space to the left. A Sydney-like skyline and bridge are present, so this is an imagined Australian setting rather than an identified site. No visible lettering, logos or holograms.",
+  "web_delivery": [
+    {
+      "file": "sovereignty-race-hero-768.webp",
+      "dimensions": [
+        768,
+        432
+      ],
+      "bytes": 74808
+    },
+    {
+      "file": "sovereignty-race-hero-1536.webp",
+      "dimensions": [
+        1536,
+        864
+      ],
+      "bytes": 250486
+    }
+  ]
+}

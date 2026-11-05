@@ -1,0 +1,30 @@
+{
+  "slug": "sovereign-capacity-hero",
+  "type": "AI-generated concept image",
+  "tool": "OpenAI built-in image_gen",
+  "generated_date": "2026-11-06",
+  "prompt": "Use case: photorealistic-natural. Asset: distinct cinematic 16:9 wide website hero. A realistic locally run Australian AI hardware and software laboratory, an urban industrial interior at evening. In centre-right an Australian woman hardware technician in ordinary laboratory workwear and a male software researcher examine a real-sized circuit board and accelerator module on an antistatic bench; a third researcher in the background works on a software workstation. Two modest physical server racks with metal grilles and cables sit against the far right wall. Their own local team is developing and testing models on hardware it can inspect and maintain. Not a glossy giant corporate data centre, not a magical future interface. Believable circuit boards, bench instruments, cabling, practical equipment and human skill. Dark quiet left third with shadowed concrete and bench edge, designed for a white heading. Cinematic charcoal and steel blue palette, soft amber task lighting on hands and components, restrained teal equipment indicators. Photo-real, documentary-style concept image with natural proportions and candid poses, no artificial grin. No legible screen text, logos, national flags, watermarks, holograms, glowing brains, vegetation, gardens, farms, potted plants or outdoor landscape. Imagined proposed local capability, not evidence that a particular facility currently operates.",
+  "original": {
+    "file": "sovereign-capacity-hero.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "19633f56ba3e81175443f585abefd21cf99dabc301115b689b96970b4be3f4a4"
+  },
+  "variants": [
+    {
+      "file": "sovereign-capacity-hero-768.webp",
+      "width": 768,
+      "height": 432,
+      "bytes": 43034
+    },
+    {
+      "file": "sovereign-capacity-hero-1536.webp",
+      "width": 1536,
+      "height": 864,
+      "bytes": 118240
+    }
+  ],
+  "alt": "Researchers and technicians examine locally controlled computing hardware in an Australian AI development laboratory.",
+  "caption": "An imagined Australian AI laboratory combining local expertise, software and computing hardware. AI-generated concept image.",
+  "inspection": "Inspected: realistic indoor setting, human activity, no vegetation or holograms, dark space for headings; an imagined setting, not a record of an operating project."
+}

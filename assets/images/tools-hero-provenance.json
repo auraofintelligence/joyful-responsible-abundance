@@ -1,0 +1,30 @@
+{
+  "title": "Tools Hero",
+  "type": "AI-generated concept image",
+  "generator": "OpenAI built-in image_gen",
+  "generated_date": "2026-11-06",
+  "prompt": "Use case: photorealistic-natural. Asset type: cinematic wide 16:9 website hero. Close editorial photograph of a practical electronics and computing workbench in a serious contemporary Australian industrial learning lab. In the centre-right, the hand and forearm of a skilled adult check a real multimeter reading beside computer components, a compact energy meter, calculator and notebook. Show neat real-world connectors, a small circuit board, server memory, screwdrivers and a deliberate workflow rather than a pile of gadgets. The written marks and digital readouts must be indistinct, with no readable text. Rich tangible materials: worn matte black bench surface, metal, insulated cables, paper, believable skin and sleeves. Deep charcoal shadows on the left third, quiet negative space for a white website heading later. Focal tools and working hand centre-right. Warm amber task lighting contrasted with steel-blue shadows and subtle teal equipment detail, elegant dark industrial lab atmosphere, shallow photographic depth of field, crisp purposeful centre-right detail. No logos, watermarks, holograms, robots, gardens, farms, butterflies or ornamental science-fiction props. Technically plausible safe bench work, grounded and capable.",
+  "alt": "A skilled hand checks electrical measurements at a workbench with computer parts and an energy meter.",
+  "caption": "An imagined practical workspace for checking claims against measurements.",
+  "file": "tools-hero.png",
+  "natural_width": 1672,
+  "natural_height": 941,
+  "native_output_filename": "exec-9bfe794c-51a8-46ab-bf07-35b5bbde49a2.png",
+  "sha256": "8cfb7d469658a21d8c68e68b3fefe1dcd7a39d14f9e10cc737f657f0235cf1a2",
+  "review": "Inspected for the requested subject, realistic material detail, quiet dark left-side composition, absence of prominent text or logos, and absence of garden or farm themes.",
+  "delivery_variants": [
+    {
+      "file": "tools-hero-768.webp",
+      "width": 768,
+      "height": 432,
+      "bytes": 48806
+    },
+    {
+      "file": "tools-hero-1536.webp",
+      "width": 1536,
+      "height": 864,
+      "bytes": 126406
+    }
+  ],
+  "processing": "Copied unchanged PNG from the built-in image generator; delivery variants resized and compressed with Pillow."
+}

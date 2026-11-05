@@ -1,0 +1,30 @@
+{
+  "slug": "public-decisions-hero",
+  "type": "AI-generated concept image",
+  "tool": "OpenAI built-in image_gen",
+  "generated_date": "2026-11-06",
+  "prompt": "Use case: photorealistic-natural. Asset: distinct cinematic 16:9 website hero, wide landscape. Evening public evidence discussion in a modest realistic Australian city hall meeting room, seen at table height in a wide composition. A diverse small group of adult residents, including an adult woman in a clearly visible manual wheelchair with comfortable table access, scrutinise a large unlabelled infrastructure map, photographs and printed charts spread on a wooden table and question two attentive local officials across from them. One resident indicates a discrepancy in a physical document; another listens with uncertainty. Quiet engaged deliberation, realistic human tension and respectful challenge, no cheering or resolution guaranteed. Charcoal shadows, steel blue architectural light, warm amber desk lamps, small restrained teal accents. Quiet dark left third with shadowed civic wall, main people/table centre and right. Naturally lit faces and realistic hands. Ordinary contemporary clothing, believable architecture and materials. No legible text, logos, campaign signs, national symbols, watermarks, holograms, vegetation, gardens, farms, potted plants or agricultural imagery. Photorealistic imagined concept photograph, not a documentary claim.",
+  "original": {
+    "file": "public-decisions-hero.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "8501cf55a5f21410a8f4054834e203002ca6dcbca611df1815075aae396d58d6"
+  },
+  "variants": [
+    {
+      "file": "public-decisions-hero-768.webp",
+      "width": 768,
+      "height": 432,
+      "bytes": 48906
+    },
+    {
+      "file": "public-decisions-hero-1536.webp",
+      "width": 1536,
+      "height": 864,
+      "bytes": 131026
+    }
+  ],
+  "alt": "Residents, including a wheelchair user, examine evidence and question officials around a civic meeting table.",
+  "caption": "An imagined civic meeting where residents examine evidence and question a public decision. AI-generated concept image.",
+  "inspection": "Inspected: realistic indoor setting, human activity, no vegetation or holograms, dark space for headings; an imagined setting, not a record of an operating project."
+}

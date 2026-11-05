@@ -1,0 +1,30 @@
+{
+  "slug": "glossary-hero",
+  "type": "AI-generated concept image",
+  "tool": "OpenAI built-in image_gen",
+  "generated_date": "2026-11-06",
+  "prompt": "Use case: photorealistic-natural. Asset: distinct cinematic 16:9 wide website hero for a glossary introducing unfamiliar terms. Contemporary Australian adult learning classroom indoors at evening, uncluttered practical desk in the centre-right. An older female instructor explains how several physical computing parts relate: a small unbranded processor board, a cable connector, a transparent simple model of a network with wooden blocks and ordinary cord, and open notebooks with indistinct marks. Two adult learners, one middle-aged man and a young adult woman, ask questions and handle the objects. The moment is one of interested adults learning language through tangible relationships, no childish classroom props, not a lecture, no assumed expertise. A small ordinary laptop sits closed at the far end. Photorealistic concept photograph with candid natural hands and faces, realistic objects and proportions, a different composition from a library makerspace or hardware laboratory. Quiet dark left third, shadowed acoustic panels with no writing, available for white heading. Subjects and helpful physical objects centre/right. Charcoal shadows, steel blue ambient light, warm amber desk lamp and restrained teal notebook cover. Wide lens at desk height, soft depth of field. No legible text or numbers, logos, watermarks, holograms, glowing brains, vegetation, gardens, farms, potted plants, agrarian imagery or staged stock-photo grins. An imagined educational setting, not a claimed existing programme.",
+  "original": {
+    "file": "glossary-hero.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "e19ccab5a500ab3503bc81f542270013cb7cc809748a2394168874ab23ad5bf9"
+  },
+  "variants": [
+    {
+      "file": "glossary-hero-768.webp",
+      "width": 768,
+      "height": 432,
+      "bytes": 42106
+    },
+    {
+      "file": "glossary-hero-1536.webp",
+      "width": 1536,
+      "height": 864,
+      "bytes": 119118
+    }
+  ],
+  "alt": "An instructor explains computing concepts to adult learners using physical components and notebooks.",
+  "caption": "An imagined adult learning session using tangible objects to explain unfamiliar ideas. AI-generated concept image.",
+  "inspection": "Inspected: realistic indoor setting, human activity, no gardens, farms or holograms, dark space for headings; an imagined setting, not a record of an operating project."
+}

@@ -1,0 +1,44 @@
+{
+  "created_date": "2026-11-06",
+  "generation_tool": "Built-in image_gen.imagegen",
+  "use_case": "photorealistic-natural",
+  "file": "authority-agency-hero.png",
+  "title": "People retain operational authority",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "bytes": 2039096,
+  "sha256": "26971672f2462fbaa959978c96002bcda4996640041a8f8c5bdf3e7438a42257",
+  "prompt": "Use case: photorealistic-natural. Asset type: original wide 16:9 website hero concept photograph. Primary request: a believable contemporary Australian freight-port control room that makes human operational authority tangible. Two adult operators, a woman and a man in practical navy workwear with restrained high-visibility details, review a substantial physical control console at centre-right. Clearly show a real unpressed red mushroom emergency-stop button on a yellow base and a mechanical key-operated isolation control in the right foreground, with normal tactile switches and fixed equipment, not floating interfaces. The people are attentive and calm, looking from the physical controls toward the working machinery through the broad window. Outside that window, recognisable container gantries and a large networked cargo transporter operate on a real port apron. Modest ordinary monitors may show simple unreadable schematic shapes, with no legible text or numbers. Wide architectural camera view, credible hands and body positions, natural industrial surfaces and fine photographic texture. Dark charcoal and steel blue, sparse amber console lamps and subtle teal reflections, consequential mature cinematic lighting. The left third is a quiet shadowed wall and unoccupied part of the room, suitable for a white website heading; the people, red stop control and port view occupy the centre and right. No gardens, farms, plants as a theme, logos, branding, text, watermarks, holograms, science-fiction control panels, dramatic emergency or catastrophe. Imagined near-future concept scene, not a photograph of an operating facility.",
+  "edit_history": [
+    {
+      "tool": "Built-in image_gen.imagegen",
+      "prompt": "Edit this image with one precise cleanup. Remove all lettering, numbers, logos, badges and painted textual markings from the large blue gantry cranes seen outside the control-room window, especially the white markings on the upper horizontal blue beams. Replace those markings with continuous plain unlettered blue-painted steel, with matching lighting, grain and weathering. Keep the same wide 16:9 composition, camera, people, faces, hands, dark left wall, port machinery, containers, console, red mushroom stop button, yellow base and mechanical key control exactly as they are. Do not add any other text, graphics, symbols or objects. Preserve the photographic realism and lighting. This is a cleanup of incidental lettering only.",
+      "purpose": "Remove incidental crane lettering while preserving scene and composition."
+    }
+  ],
+  "transparent_background": false,
+  "alt": "Two operators in an imagined Australian port control room review physical controls, including a prominent red stop button and key-operated control, with cargo machinery visible through the window.",
+  "caption": "An imagined Australian port control room with tangible human controls over networked machinery. AI-generated concept image, not a photograph of an operating facility.",
+  "conceptual_status": "AI-generated concept photograph. Imagined scene, not documentary evidence of an operating facility.",
+  "visual_review": "Visually inspected after a targeted cleanup removed incidental lettering from crane beams. The image shows two calm adult operators, an unpressed red mushroom stop button on a yellow base, a mechanical key control and port machinery outside the window. The left wall remains quiet and dark. No gardens, farms, holograms or legible promotional lettering.",
+  "web_delivery": [
+    {
+      "file": "authority-agency-hero-768.webp",
+      "dimensions": [
+        768,
+        432
+      ],
+      "bytes": 54664
+    },
+    {
+      "file": "authority-agency-hero-1536.webp",
+      "dimensions": [
+        1536,
+        864
+      ],
+      "bytes": 149812
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Library Hero",
+  "type": "AI-generated concept image",
+  "generator": "OpenAI built-in image_gen",
+  "generated_date": "2026-11-06",
+  "prompt": "Use case: photorealistic-natural. Asset type: cinematic wide 16:9 website hero. Modern Australian civic research archive, a real human librarian or researcher in the centre-right thoughtfully comparing a printed source document with other physical reference materials and a desktop computer at a generous wooden workstation. Around the person, a carefully organised modern civic archive with shelving, archival folders, reference books, document boxes and glass partition details. A serious welcoming institution used by ordinary people, not an ancient fantasy library. The screen and papers show only indistinct abstract marks, absolutely no readable text or logos. Natural candid concentration, realistic hands and ordinary professional clothing. Dark charcoal and steel-blue ambience with focused warm amber task light, restrained teal detail, convincing wood, paper, glass and metal textures. Keep the left third visually quiet and relatively dark, perhaps a shadowed archive aisle, for a white heading placed later. Subject and documentary evidence concentrated centre-right. Photographic editorial realism, cinematic depth, a quietly hopeful sense of public knowledge. No holograms, robots, logos, watermarks, gardens, farms, butterflies, grandiose fantasy architecture or exaggerated piles of books.",
+  "alt": "A librarian compares printed sources with documents at a computer workstation in a modern civic archive.",
+  "caption": "An imagined civic archive where people can compare sources and follow the evidence.",
+  "file": "library-hero.png",
+  "natural_width": 1672,
+  "natural_height": 941,
+  "native_output_filename": "exec-be229a43-8955-4a26-b09a-7e9db0740e2f.png",
+  "sha256": "7eb4d7fcedcd33b4da7364dc48d8b512c300fb8968424e921e9dcedf36474c57",
+  "review": "Inspected for the requested subject, realistic material detail, quiet dark left-side composition, absence of prominent text or logos, and absence of garden or farm themes.",
+  "delivery_variants": [
+    {
+      "file": "library-hero-768.webp",
+      "width": 768,
+      "height": 432,
+      "bytes": 39664
+    },
+    {
+      "file": "library-hero-1536.webp",
+      "width": 1536,
+      "height": 864,
+      "bytes": 100410
+    }
+  ],
+  "processing": "Copied unchanged PNG from the built-in image generator; delivery variants resized and compressed with Pillow."
+}

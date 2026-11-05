@@ -1,0 +1,37 @@
+{
+  "created_date": "2026-11-06",
+  "generation_tool": "Built-in image_gen.imagegen",
+  "use_case": "photorealistic-natural",
+  "file": "intelligence-infrastructure-hero.png",
+  "title": "The physical infrastructure behind AI",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "bytes": 2391952,
+  "sha256": "67f044e3976082330cf9fd5cb57f2bff3d5972b41d986912698aa413d0b57bc6",
+  "prompt": "Use case: photorealistic-natural. Asset type: original landscape 16:9 website hero concept photograph, wide cinematic composition. Believable physical materials and natural photographic detail, dark charcoal and steel blue, restrained amber and teal practical light. Quiet dark left third reserved for a white heading, main visual interest centre and right. No lettering, logos, watermarks, holograms, transparent floating displays, gardens, farms, agrarian lifestyle scenes, or fantasy neon. Not a photograph of an existing project. Primary request: inside an expansive, believable contemporary high-performance data centre. Wide architectural photograph at human eye level, very long rows of dark server cabinets on the centre-right, overhead cable trays, carefully routed fibre and power bundles, visible chilled-water pipes and realistic cooling equipment, orderly maintenance aisles and industrial ceiling structure. Two adult technicians in practical work clothing stand in a brightly but naturally lit maintenance area to the right, looking at a physical rack with a small ordinary handheld diagnostic tablet, showing human scale without posing for camera. Leave the left third as a broad unoccupied shadowed aisle or dark equipment wall. Steel, cable insulation, perforated doors, restrained teal status lights and amber work lamps, credible working machinery rather than a science-fiction corridor.",
+  "transparent_background": false,
+  "alt": "Two technicians inspect a server cabinet in an imagined large data centre with overhead cables, chilled-water pipes and cooling equipment.",
+  "caption": "An imagined data-centre maintenance scene showing the physical systems and people behind computing. AI-generated concept image.",
+  "conceptual_status": "AI-generated concept photograph. Imagined scene, not documentary evidence of an operating facility.",
+  "visual_review": "Visually inspected. Two adult technicians and a diagnostic tablet appear naturally beside an open rack on the right, with orderly cable trays, pipes and cooling equipment. The left aisle is dark and quiet. No visible logos, legible lettering or holograms.",
+  "web_delivery": [
+    {
+      "file": "intelligence-infrastructure-hero-768.webp",
+      "dimensions": [
+        768,
+        432
+      ],
+      "bytes": 61014
+    },
+    {
+      "file": "intelligence-infrastructure-hero-1536.webp",
+      "dimensions": [
+        1536,
+        864
+      ],
+      "bytes": 191760
+    }
+  ]
+}

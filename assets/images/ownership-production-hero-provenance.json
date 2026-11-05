@@ -1,0 +1,37 @@
+{
+  "created_date": "2026-11-06",
+  "generation_tool": "Built-in image_gen.imagegen",
+  "use_case": "photorealistic-natural",
+  "file": "ownership-production-hero.png",
+  "title": "Productive wealth on the factory floor",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "bytes": 2479142,
+  "sha256": "84c863fdc8ffd365115062038a022d45652e10789cbae724be31991082326611",
+  "prompt": "Use case: photorealistic-natural. Asset type: original landscape 16:9 website hero concept photograph. Wide cinematic framing, physically grounded materials, charcoal and steel blue with restrained amber and teal light. Keep the left third dark and visually quiet for white website headings; focal action and detail centre-right. No text, labels, branding, logos, watermarks, holograms, floating interfaces, gardens, farms or agrarian imagery. Imagined concept scene, not documentation of an operating project. Primary request: an expansive contemporary Australian automotive and industrial robotics factory, real physical productive wealth. Wide photographic view from a slightly raised shop-floor walkway across believable production equipment: unbranded car body shells on an assembly line, substantial industrial robot arms anchored to the floor, machine tools, conveyors, safety fencing and overhead services. Two adult engineers in practical workwear and appropriate safety equipment stand together on a marked pedestrian walkway at centre-right, reviewing the production cell from safely outside its guarded area. The factory extends far into the background, with exact mechanical detail and naturally worn concrete and steel. Left foreground is an unoccupied shadowed structural bay, not another machine filling the text area. Amber overhead working light, cool steel-blue factory depth. Mature ambitious photographic realism, without science-fiction humanoids, theatrical sparks or heroic posing.",
+  "transparent_background": false,
+  "alt": "Two adult engineers review an imagined guarded automotive assembly line, with substantial robot arms, vehicle body shells and production equipment.",
+  "caption": "An imagined Australian automotive and robotics production floor. AI-generated concept image illustrating physical productive capacity and the people who understand it.",
+  "conceptual_status": "AI-generated concept photograph. Imagined scene, not documentary evidence of an operating facility.",
+  "visual_review": "Visually inspected. The engineers stand on a marked walkway outside safety fencing, beside believable anchored robot arms and vehicle body shells. An empty shadowed bay on the left provides heading space. No visible company branding, holograms, gardens or farms.",
+  "web_delivery": [
+    {
+      "file": "ownership-production-hero-768.webp",
+      "dimensions": [
+        768,
+        432
+      ],
+      "bytes": 82854
+    },
+    {
+      "file": "ownership-production-hero-1536.webp",
+      "dimensions": [
+        1536,
+        864
+      ],
+      "bytes": 245960
+    }
+  ]
+}

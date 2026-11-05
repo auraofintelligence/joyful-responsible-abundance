@@ -1,0 +1,39 @@
+{
+  "slug": "nasa-robotics",
+  "creator": "NASA / Johnson Space Center",
+  "title": "The Cygnus space freighter in the grip of the Canadarm2",
+  "source": "https://www.nasa.gov/image-article/the-cygnus-space-freighter-in-the-grip-of-the-canadarm2/",
+  "original_url": "https://images-assets.nasa.gov/image/iss069e004683/iss069e004683~orig.jpg",
+  "record_url": "https://images-api.nasa.gov/search?nasa_id=iss069e004683&media_type=image",
+  "nasa_id": "iss069e004683",
+  "date_taken": "2023-04-20",
+  "alt": "The Cygnus cargo spacecraft held by the Canadarm2 robotic arm at the International Space Station, with Earth’s blue horizon behind it.",
+  "caption": "Cygnus in Canadarm2’s grip at the International Space Station, 20 April 2023. Photograph: NASA, public domain.",
+  "type": "Real photograph",
+  "file": "nasa-robotics-1536.webp",
+  "width": 1536,
+  "height": 863,
+  "licence": "Public domain in the United States (US government photograph); NASA Media Usage Guidelines apply.",
+  "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "licence_note": "NASA permits factual educational and informational use with acknowledgement; no third-party copyright credit is attached to these image records. NASA does not endorse this website.",
+  "original_width": 4928,
+  "original_height": 2768,
+  "original_sha256": "5418a0221ccf6aae945dd198394d479de45388caddd2e223fae7fa67a065d1a2",
+  "resize_info": "Resized from the full-resolution NASA archive original with Pillow LANCZOS, converted to WebP quality 88. Original aspect ratio and complete framing retained; no crop, colour change, retouching, compositing or AI generation.",
+  "variants": [
+    {
+      "file": "nasa-robotics-768.webp",
+      "width": 768,
+      "height": 431,
+      "bytes": 33992
+    },
+    {
+      "file": "nasa-robotics-1536.webp",
+      "width": 1536,
+      "height": 863,
+      "bytes": 88392
+    }
+  ],
+  "verified_date": "2026-11-06",
+  "inspection": "Original and responsive files visually inspected; genuine NASA spacecraft or Earth photography, not a render or artwork."
+}

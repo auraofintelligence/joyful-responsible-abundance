@@ -1,73 +1,217 @@
 {
-  "generated": {
-    "created_date": "2026-11-05",
-    "generation_tool": "Built-in image_gen.imagegen",
-    "use_case": "photorealistic-natural",
-    "note": "AI-generated concept images for the Joyful Responsible Abundance website. Scenes represent proposed possibilities and do not document actual events, venues, installations or institutional participation.",
-    "images": [
-      {
-        "file": "community-hero.png",
-        "dimensions": [
-          1536,
-          1024
-        ],
-        "transparent_background": false,
-        "prompt": "Use case: photorealistic-natural. Asset type: wide landscape editorial website hero, aspect ratio 3:2 or 16:9. Create a richly detailed photographic-style concept image of an optimistic, serious Australian coastal community public commons at golden hour. Real people of varied ages and backgrounds are learning and making things together in and around a sensitively designed low-rise timber-and-stone community library and open courtyard. Show a few people collaborating at a table with ordinary laptops and paper sketches, others tending native coastal plants, with a beautiful Australian bay and coastal ecology beyond. Human warmth, agency, curiosity, practical knowledge and belonging are the visual story. Beautiful authentic architectural photography, subtle documentary candid gestures, natural imperfect textures, soft amber light, ocean blue and native vegetation. Include one small butterfly, incidental and naturally scaled, near foreground vegetation. Optimistic near-future design grounded in plausible Australian life. Broad landscape composition, considered depth, tangible human scene. No text, no logos, no captions, no watermark, no glowing holograms, no giant screens, no robots, no futuristic neon visual clichÃ©s. The butterfly should reward a close look rather than dominate the composition.",
-        "sha256": "7d88895db156c05bf487590364c4b6c2b0be80af41a0b72c61670820ad78c4dd",
-        "alt": "People share learning and tend coastal plants beside an imagined Australian community commons.",
-        "visual_review": "Inspected the generated image. No text or logos. Natural scene, consistent hands and faces at website scale. Butterfly subtle in the first two images. Festival composition has a broad inclusive gathering and distant stage."
-      },
-      {
-        "file": "local-compute.png",
-        "dimensions": [
-          1536,
-          1024
-        ],
-        "transparent_background": false,
-        "prompt": "Use case: photorealistic-natural. Asset type: wide landscape editorial website image, aspect ratio 3:2 or 16:9. Create a high-quality photographic-style concept image of a local Australian community computing workshop in daytime. A warmly designed public learning room built from timber, brick and practical materials adjoins a secure tidy computing room. The scene shows three to five people of different ages collaborating with an experienced technician, learning useful skills beside one neatly installed rack-scale computing cabinet visible through a glazed partition. Ordinary useful screens have abstract unlettered content. The computing equipment is substantial and credible, with sensible cabling and building services. Warm wooden workbenches and a light open courtyard give this place a humane, approachable character. Focus on people owning and understanding their tools, practical technical competence, daylight, craftsmanship, and public learning. One small butterfly can be glimpsed outside through an open courtyard door, naturally scaled and subtle. Broad landscape composition, natural candid body language, photographic detail and honest textures. No text, no brands, no logos, no watermark, no holograms, no robots, no neon, no science-fiction control room, no extra butterfly motifs.",
-        "sha256": "ad9435d6c4095000b7e613a41b936737e0d892097994dee4263c6b7fa26ea994",
-        "alt": "A community group learns computer hardware beside a secure local computing cabinet and open courtyard.",
-        "visual_review": "Inspected the generated image. No text or logos. Natural scene, consistent hands and faces at website scale. Butterfly subtle in the first two images. Festival composition has a broad inclusive gathering and distant stage."
-      },
-      {
-        "file": "global-festival.png",
-        "dimensions": [
-          1536,
-          1024
-        ],
-        "transparent_background": false,
-        "prompt": "Use case: photorealistic-natural. Asset type: wide landscape editorial concept image for a serious optimistic whole-system website, aspect ratio 3:2 or 16:9. Imagine a proposed worldwide festival in July 2035, connected to Live Aid's fiftieth anniversary and three continuous days exploring Past, Present and Future. Show one beautiful imagined outdoor ocean-side festival gathering as part of a global network: culturally diverse adults and families sharing music, art and conversation, a modest distant performance stage integrated into the landscape, people dancing naturally, a quiet foreground group looking at a collaborative sculpture and talking, and generous open pathways around landscape and native planting. Broad inclusive joyful humanity, creative public participation and shared civic purpose. The scale should feel ambitious and public, yet grounded in a real place and believable human activity. Landscape and sea, warm late-afternoon light, beautiful documentary architectural/event photography, gentle natural colour, distinct real faces and bodies. A tiny butterfly near a foreground plant is optional and should be barely noticeable. There should be no readable text, no event signage, no logos, no flags, no watermark, no holograms, no robots, no dystopian crowd, no authoritarian spectacle, and no depiction claiming a real event has already happened. A photoreal conceptual future scene with visual depth and warmth.",
-        "sha256": "348a73df5eab656d05029919157bb3cce7c0ace6ad2919984b8537919c736727",
-        "alt": "An imagined coastal festival brings people together for music, art and conversation.",
-        "visual_review": "Inspected the generated image. No text or logos. Natural scene, consistent hands and faces at website scale. Butterfly subtle in the first two images. Festival composition has a broad inclusive gathering and distant stage."
-      },
-      {
-        "created_date": "2026-11-05",
-        "generation_tool": "Built-in image_gen.imagegen",
-        "use_case": "photorealistic-natural",
-        "file": "choice-hero.png",
-        "dimensions": [
-          1672,
-          941
-        ],
-        "bytes": 2403608,
-        "sha256": "6aa25bdc5eb2d5ff948e8240005dcaba4d7d69346eaa07fe16187ebc507a7904",
-        "prompt": "Use case: photorealistic-natural. Asset type: cinematic full-bleed landscape website hero with broad 16:9 or 21:9 composition. Create one sophisticated photographic speculative scene of an Australian coastal city and industrial landscape at blue hour. The horizon holds materially grand computing, industry and power infrastructure: huge privately enclosed data-centre buildings and carefully believable power distribution in the right-centre distance, with a dense coastal city further beyond. Keep the whole image one coherent, physically plausible landscape. In the nearer foreground a few ordinary Australian adults stand on a public overlook or walkway, considering the transformed landscape. Near them, a human-scale shared workshop, community garden and small public gathering have warm light, practical tools and restrained green life. Their presence suggests people actively deciding what to build and how to live as powerful industrial change is already under way. Consequential and uncertain yet with human agency, thoughtful and serious rather than despairing. Deep charcoal, indigo and steel blue; sparse amber windows and warm working lights; restrained natural greens. Place most visual interest in the right centre and lower image. Leave generous open dark sky and atmospheric negative space in the upper-left suitable for a white website heading. Use credible Australian coastal architecture, practical industrial design, natural adults and fine photographic textures. A single very subtle small butterfly near a foreground plant may be included if naturally visible, never as a visual motif. No text, no logos, no watermarks, no holograms, no robots, no symbol scales, no split screen, no binary two-world composition, no apocalypse, no smoke disaster, no dystopian ruin. Landscape scene, beautiful cinematographic lighting, believable depth and ambitious scale.",
-        "transparent_background": false,
-        "alt": "People look across an imagined Australian coastal city at blue hour, with a vast computing and power precinct beyond a warmly lit community workshop and garden.",
-        "note": "AI-generated concept image representing choices about a proposed future. The landscape, gathering and computing precinct are imagined.",
-        "visual_review": "Inspected generated image. Coherent coastal landscape with materially large data-centre and power infrastructure in the distance, foreground adults and warm community workshop, dark upper-left negative space. No visible text, logos, holograms or robots. Two tiny butterflies near foreground vegetation.",
-        "web_delivery": "Resized to 768 and 1536 pixels wide, converted to WebP."
-      }
-    ]
-  },
-  "photographs": [
+  "edition": "2026-11-06",
+  "note": "Concept images illustrate imagined settings. Photographs retain the individual licences and source credits listed here. Resizing and WebP conversion do not change the licence of a photograph. Hero presentation may crop an image to fit the screen.",
+  "images": [
+    {
+      "kind": "concept",
+      "title": "Local Compute",
+      "alt": "A community group learns computer hardware beside a secure local computing cabinet and open courtyard.",
+      "caption": "An imagined community computing workshop. AI-generated concept image.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/generated-image-provenance.json",
+      "width": 1536,
+      "height": 1024,
+      "file": "local-compute"
+    },
+    {
+      "kind": "concept",
+      "title": "Global Festival",
+      "alt": "An imagined coastal festival brings people together for music, art and conversation.",
+      "caption": "An imagined setting for the proposed 2035 global festival. AI-generated concept image.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/generated-image-provenance.json",
+      "width": 1536,
+      "height": 1024,
+      "file": "global-festival"
+    },
+    {
+      "kind": "concept",
+      "title": "Choice Hero",
+      "alt": "People look across an imagined Australian coastal city at blue hour, with a vast computing and power precinct beyond a warmly lit community workshop and garden.",
+      "caption": "An imagined future, with choices still open. AI-generated concept image.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/choice-hero-provenance.json",
+      "width": 1536,
+      "height": 864,
+      "file": "choice-hero"
+    },
+    {
+      "kind": "concept",
+      "title": "Start Here Hero",
+      "alt": "An adult reviews a household document and laptop in an Australian city apartment at night.",
+      "caption": "Imagined first steps in understanding the systems that shape everyday life. AI-generated concept image.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/start-here-hero-provenance.json",
+      "width": 1536,
+      "height": 864,
+      "file": "start-here-hero"
+    },
+    {
+      "kind": "concept",
+      "title": "Explore Hero",
+      "alt": "An imagined urban precinct connects housing, a tram stop, civic learning, healthcare and workshops.",
+      "caption": "A connected urban precinct imagined as one place with many useful relationships. AI-generated concept image.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/explore-hero-provenance.json",
+      "width": 1536,
+      "height": 864,
+      "file": "explore-hero"
+    },
+    {
+      "kind": "concept",
+      "title": "Tools Hero",
+      "alt": "A skilled hand checks electrical measurements at a workbench with computer parts and an energy meter.",
+      "caption": "An imagined practical workspace for checking claims against measurements. AI-generated concept image.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/tools-hero-provenance.json",
+      "width": 1536,
+      "height": 864,
+      "file": "tools-hero"
+    },
+    {
+      "kind": "concept",
+      "title": "Library Hero",
+      "alt": "A librarian compares printed sources with documents at a computer workstation in a modern civic archive.",
+      "caption": "An imagined civic archive where people can compare sources and follow the evidence. AI-generated concept image.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/library-hero-provenance.json",
+      "width": 1536,
+      "height": 864,
+      "file": "library-hero"
+    },
+    {
+      "kind": "concept",
+      "title": "Projects Hero",
+      "alt": "Adults collaborate on electronics, accessible equipment and prototypes in an urban engineering studio.",
+      "caption": "An imagined urban studio where people turn practical ideas into working projects. AI-generated concept image.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/projects-hero-provenance.json",
+      "width": 1536,
+      "height": 864,
+      "file": "projects-hero"
+    },
+    {
+      "kind": "concept",
+      "title": "Industrial intelligence and national infrastructure",
+      "alt": "An imagined Australian AI campus at night combines large data-centre buildings, cooling plant, a transformer yard, communications equipment and a working urban port.",
+      "caption": "An imagined Australian AI and industrial infrastructure precinct. AI-generated concept image, not a photograph of an operating project.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/sovereignty-race-hero-provenance.json",
+      "width": 1536,
+      "height": 864,
+      "file": "sovereignty-race-hero"
+    },
+    {
+      "kind": "concept",
+      "title": "The physical infrastructure behind AI",
+      "alt": "Two technicians inspect a server cabinet in an imagined large data centre with overhead cables, chilled-water pipes and cooling equipment.",
+      "caption": "An imagined data-centre maintenance scene showing the physical systems and people behind computing. AI-generated concept image.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/intelligence-infrastructure-hero-provenance.json",
+      "width": 1536,
+      "height": 864,
+      "file": "intelligence-infrastructure-hero"
+    },
+    {
+      "kind": "concept",
+      "title": "Productive wealth on the factory floor",
+      "alt": "Two adult engineers review an imagined guarded automotive assembly line, with substantial robot arms, vehicle body shells and production equipment.",
+      "caption": "An imagined Australian automotive and robotics production floor. AI-generated concept image illustrating physical productive capacity and the people who understand it.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/ownership-production-hero-provenance.json",
+      "width": 1536,
+      "height": 864,
+      "file": "ownership-production-hero"
+    },
+    {
+      "kind": "concept",
+      "title": "A speculative orbital industrial capability",
+      "alt": "An imagined orbital manufacturing spacecraft uses a robotic arm beside cargo pallets, truss structures, cylindrical modules and solar arrays above Earth's curved blue horizon.",
+      "caption": "A speculative orbital construction and manufacturing scene above Earth. AI-generated concept image, not a photograph of an operating project.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/industrial-feedback-hero-provenance.json",
+      "width": 1536,
+      "height": 864,
+      "file": "industrial-feedback-hero"
+    },
+    {
+      "kind": "concept",
+      "title": "People retain operational authority",
+      "alt": "Two operators in an imagined Australian port control room review physical controls, including a prominent red stop button and key-operated control, with cargo machinery visible through the window.",
+      "caption": "An imagined Australian port control room with tangible human controls over networked machinery. AI-generated concept image, not a photograph of an operating facility.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/authority-agency-hero-provenance.json",
+      "width": 1536,
+      "height": 864,
+      "file": "authority-agency-hero"
+    },
+    {
+      "kind": "concept",
+      "title": "People Practice",
+      "alt": "A learner and mentor build a practical object together in an urban Australian library studio.",
+      "caption": "An imagined library studio where a person can learn, create and direct their own tools. AI-generated concept image.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/people-practice-hero-provenance.json",
+      "width": 1536,
+      "height": 864,
+      "file": "people-practice-hero"
+    },
+    {
+      "kind": "concept",
+      "title": "Public Decisions",
+      "alt": "Residents, including a wheelchair user, examine evidence and question officials around a civic meeting table.",
+      "caption": "An imagined civic meeting where residents examine evidence and question a public decision. AI-generated concept image.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/public-decisions-hero-provenance.json",
+      "width": 1536,
+      "height": 864,
+      "file": "public-decisions-hero"
+    },
+    {
+      "kind": "concept",
+      "title": "Five Horizons",
+      "alt": "Engineers compare physical models of possible infrastructure stages in a design office overlooking urban construction.",
+      "caption": "An imagined planning studio comparing possible stages of infrastructure development. AI-generated concept image.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/five-horizons-hero-provenance.json",
+      "width": 1536,
+      "height": 864,
+      "file": "five-horizons-hero"
+    },
+    {
+      "kind": "concept",
+      "title": "Sovereign Capacity",
+      "alt": "Researchers and technicians examine locally controlled computing hardware in an Australian AI development laboratory.",
+      "caption": "An imagined Australian AI laboratory combining local expertise, software and computing hardware. AI-generated concept image.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/sovereign-capacity-hero-provenance.json",
+      "width": 1536,
+      "height": 864,
+      "file": "sovereign-capacity-hero"
+    },
+    {
+      "kind": "concept",
+      "title": "Glossary",
+      "alt": "An instructor explains computing concepts to adult learners using physical components and notebooks.",
+      "caption": "An imagined adult learning session using tangible objects to explain unfamiliar ideas. AI-generated concept image.",
+      "creator": "AI-generated for Luke Nathan Hayes",
+      "provenance": "assets/images/glossary-hero-provenance.json",
+      "width": 1536,
+      "height": 864,
+      "file": "glossary-hero"
+    },
     {
       "file": "amity-jetty",
       "creator": "Pacificwizard",
       "licence": "CC0",
       "source": "https://commons.wikimedia.org/wiki/File:Amity_Point_Jetty_at_Sunset._North_Stradbroke_Island,_Queensland,_Australia.jpg",
-      "modifications": "Resized and converted to WebP."
+      "modifications": "Resized and converted to WebP.",
+      "kind": "photograph",
+      "title": "Amity Point jetty",
+      "alt": "People on Amity Point jetty at sunset.",
+      "caption": "Amity Point jetty, Minjerribah.",
+      "width": 1536,
+      "height": 1152
     },
     {
       "file": "point-lookout",
@@ -76,7 +220,222 @@
       "licence": "CC BY 4.0",
       "licence_url": "https://creativecommons.org/licenses/by/4.0/",
       "source": "https://commons.wikimedia.org/wiki/File:Point_Lookout,_North_Stradbroke_Island.jpg",
-      "modifications": "Resized and converted to WebP, preserving the credit border."
+      "modifications": "Resized and converted to WebP, preserving the credit border.",
+      "kind": "photograph",
+      "title": "Point Lookout, Minjerribah",
+      "alt": "Waves breaking against the rocks at Point Lookout on Minjerribah.",
+      "caption": "Point Lookout, Minjerribah, photographed in 2020.",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "file": "parliament-dusk",
+      "title": "Parliament House at dusk, Canberra",
+      "creator": "Thennicke",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Parliament_House_at_dusk,_Canberra_ACT.jpg",
+      "source_credit": "Thennicke / Wikimedia Commons / CC BY-SA 4.0",
+      "alt": "Parliament House and its flag mast reflected in water at dusk in Canberra.",
+      "caption": "Parliament House, Canberra, at dusk on 7 April 2017.",
+      "width": 1536,
+      "height": 1024,
+      "modifications": "Resized and converted from JPEG to WebP; native proportions retained. No cropping or generative alterations.",
+      "kind": "photograph",
+      "year": "2017"
+    },
+    {
+      "file": "melbourne-network",
+      "title": "Melbourne skyline",
+      "creator": "Caroline Jones",
+      "licence": "Public domain",
+      "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Melbourne_skyline_(23464914104).jpg",
+      "source_credit": "Caroline Jones / Wikimedia Commons / Public domain",
+      "alt": "Melbourne city buildings and a pedestrian bridge reflected in the river at night.",
+      "caption": "Melbourne skyline on Christmas evening, 25 December 2015.",
+      "width": 1536,
+      "height": 1020,
+      "modifications": "Resized and converted from JPEG to WebP; native proportions retained. No cropping or generative alterations.",
+      "kind": "photograph",
+      "year": "2015"
+    },
+    {
+      "file": "state-library",
+      "title": "State Library of Victoria, Melbourne",
+      "creator": "Crisco 1492",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:State_Library_of_Victoria,_Melbourne,_2017-10-29_03.jpg",
+      "source_credit": "Crisco 1492 / Wikimedia Commons / CC BY-SA 4.0",
+      "alt": "Readers sit at desks beneath galleries in the State Library of Victoria.",
+      "caption": "State Library of Victoria, Melbourne, on 29 October 2017.",
+      "width": 1536,
+      "height": 742,
+      "modifications": "Resized and converted from JPEG to WebP; native proportions retained. No cropping or generative alterations.",
+      "kind": "photograph",
+      "year": "2017"
+    },
+    {
+      "file": "csiro-compute",
+      "title": "CSIRO GPU cluster at the data centre",
+      "creator": "division, CSIRO",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_11313_The_CSIRO_GPU_cluster_at_the_data_centre.jpg",
+      "source_credit": "CSIRO / Wikimedia Commons / CC BY 3.0",
+      "alt": "Racks of CSIRO computing equipment in a data centre.",
+      "caption": "CSIRO GPU cluster at a data centre, photographed on 19 April 2010.",
+      "width": 1536,
+      "height": 1020,
+      "modifications": "Resized and converted from JPEG to WebP; native proportions retained. No cropping or generative alterations.",
+      "kind": "photograph",
+      "year": "2010"
+    },
+    {
+      "file": "parliament-chamber",
+      "title": "Australian House of Representatives chamber",
+      "creator": "JJ Harrison (https://www.jjharrison.com.au/)",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Australian_House_of_Representatives_-_Parliament_of_Australia.jpg",
+      "source_credit": "JJ Harrison (https://www.jjharrison.com.au/) / Wikimedia Commons / CC BY-SA 3.0",
+      "alt": "Curved rows of desks and green seating in the Australian House of Representatives chamber.",
+      "caption": "The House of Representatives chamber, Parliament House, Canberra, on 22 January 2012.",
+      "width": 1536,
+      "height": 914,
+      "modifications": "Resized and converted from JPEG to WebP; native proportions retained. No cropping or generative alterations.",
+      "kind": "photograph",
+      "year": "2012"
+    },
+    {
+      "file": "rooftop-solar",
+      "title": "Suburban rooftop solar, Canberra",
+      "creator": "Benlisquare",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Suburban_rooftop_solar_power_generation_in_Canberra,_Australia.jpg",
+      "source_credit": "Benlisquare / Wikimedia Commons / CC BY-SA 4.0",
+      "alt": "An aerial view of Canberra houses with rooftop solar panels.",
+      "caption": "Suburban rooftops with solar panels in Canberra, photographed on 7 February 2026.",
+      "width": 1536,
+      "height": 1024,
+      "modifications": "Resized and converted from JPEG to WebP; native proportions retained. No cropping or generative alterations.",
+      "kind": "photograph",
+      "year": "2026"
+    },
+    {
+      "file": "synchrotron-control",
+      "title": "Australian Synchrotron control room",
+      "creator": "John O'Neill (jjron)",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Aust.-Synchrotron-Control-Room-Control-Centre,-14.06.2007.jpg",
+      "source_credit": "John O'Neill (jjron) / Wikimedia Commons / CC BY-SA 3.0",
+      "alt": "A seated operator faces several computer monitors in the Australian Synchrotron control room.",
+      "caption": "The Australian Synchrotron control centre, Clayton, Victoria, on 14 June 2007.",
+      "width": 1536,
+      "height": 1024,
+      "modifications": "Resized and converted from JPEG to WebP; native proportions retained. No cropping or generative alterations.",
+      "kind": "photograph",
+      "year": "2007"
+    },
+    {
+      "file": "mri-scanner",
+      "title": "MRI scanner and control workstation",
+      "creator": "Lizadeborah03",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:MRI_Scanner.jpg",
+      "source_credit": "Lizadeborah03 / Wikimedia Commons / CC BY-SA 4.0",
+      "alt": "An MRI control workstation with the scanner visible through an observation window.",
+      "caption": "MRI control workstation and scanner at King Faisal hospital, photographed on 6 April 2021.",
+      "width": 1536,
+      "height": 2048,
+      "modifications": "Resized and converted from JPEG to WebP; native proportions retained. No cropping or generative alterations.",
+      "kind": "photograph",
+      "year": "2021",
+      "layout": "portrait"
+    },
+    {
+      "slug": "nasa-robotics",
+      "creator": "NASA / Johnson Space Center",
+      "title": "The Cygnus space freighter in the grip of the Canadarm2",
+      "source": "https://www.nasa.gov/image-article/the-cygnus-space-freighter-in-the-grip-of-the-canadarm2/",
+      "original_url": "https://images-assets.nasa.gov/image/iss069e004683/iss069e004683~orig.jpg",
+      "record_url": "https://images-api.nasa.gov/search?nasa_id=iss069e004683&media_type=image",
+      "nasa_id": "iss069e004683",
+      "date_taken": "2023-04-20",
+      "alt": "The Cygnus cargo spacecraft held by the Canadarm2 robotic arm at the International Space Station, with Earth’s blue horizon behind it.",
+      "caption": "Cygnus in Canadarm2’s grip at the International Space Station, 20 April 2023.",
+      "type": "Real photograph",
+      "file": "nasa-robotics",
+      "width": 1536,
+      "height": 863,
+      "licence": "Public domain in the United States (US government photograph); NASA Media Usage Guidelines apply.",
+      "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "licence_note": "NASA permits factual educational and informational use with acknowledgement; no third-party copyright credit is attached to these image records. NASA does not endorse this website.",
+      "original_width": 4928,
+      "original_height": 2768,
+      "original_sha256": "5418a0221ccf6aae945dd198394d479de45388caddd2e223fae7fa67a065d1a2",
+      "resize_info": "Resized from the full-resolution NASA archive original with Pillow LANCZOS, converted to WebP quality 88. Original aspect ratio and complete framing retained; no crop, colour change, retouching, compositing or AI generation.",
+      "variants": [
+        {
+          "file": "nasa-robotics-768.webp",
+          "width": 768,
+          "height": 431,
+          "bytes": 33992
+        },
+        {
+          "file": "nasa-robotics-1536.webp",
+          "width": 1536,
+          "height": 863,
+          "bytes": 88392
+        }
+      ],
+      "verified_date": "2026-11-06",
+      "inspection": "Original and responsive files visually inspected; genuine NASA spacecraft or Earth photography, not a render or artwork.",
+      "kind": "photograph"
+    },
+    {
+      "slug": "earth-at-night",
+      "creator": "NASA / Johnson Space Center",
+      "title": "City lights of southern India and Sri Lanka",
+      "source": "https://www.nasa.gov/image-article/city-lights-of-southern-india-sri-lanka/",
+      "original_url": "https://images-assets.nasa.gov/image/iss066e029018/iss066e029018~orig.jpg",
+      "record_url": "https://images-api.nasa.gov/search?nasa_id=iss066e029018&media_type=image",
+      "nasa_id": "iss066e029018",
+      "date_taken": "2021-10-30",
+      "alt": "City lights across southern India and Sri Lanka beneath atmospheric airglow and stars, photographed from the International Space Station.",
+      "caption": "Southern India and Sri Lanka at night from the International Space Station, 30 October 2021.",
+      "type": "Real photograph",
+      "file": "earth-at-night",
+      "width": 1536,
+      "height": 1024,
+      "licence": "Public domain in the United States (US government photograph); NASA Media Usage Guidelines apply.",
+      "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "licence_note": "NASA permits factual educational and informational use with acknowledgement; no third-party copyright credit is attached to these image records. NASA does not endorse this website.",
+      "original_width": 5568,
+      "original_height": 3712,
+      "original_sha256": "d1034f6b43a061c12e0eb710271da5a4f4a68c9e3105afae8c882a30ea90d3d3",
+      "resize_info": "Resized from the full-resolution NASA archive original with Pillow LANCZOS, converted to WebP quality 88. Original aspect ratio and complete framing retained; no crop, colour change, retouching, compositing or AI generation.",
+      "variants": [
+        {
+          "file": "earth-at-night-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 8220
+        },
+        {
+          "file": "earth-at-night-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 43218
+        }
+      ],
+      "verified_date": "2026-11-06",
+      "inspection": "Original and responsive files visually inspected; genuine NASA spacecraft or Earth photography, not a render or artwork.",
+      "kind": "photograph"
     }
   ]
 }

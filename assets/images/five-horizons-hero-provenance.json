@@ -1,0 +1,30 @@
+{
+  "slug": "five-horizons-hero",
+  "type": "AI-generated concept image",
+  "tool": "OpenAI built-in image_gen",
+  "generated_date": "2026-11-06",
+  "prompt": "Use case: photorealistic-natural. Asset: unique cinematic 16:9 wide website hero. A serious realistic engineering design office at dusk overlooking urban Australian rail and electricity substation construction, visible through broad windows on the right: actual cranes, unfinished rail platforms, steel supports and cables, no extravagant sci-fi architecture. In the centre-right foreground, two adult engineers compare three separate physical architectural scale models on a long workbench, one sketch-stage massing model, one partially assembled model and one more detailed completed design alternative. They are comparing possible futures, not celebrating a certain outcome. Models are recognisably at different stages; no labels or legible numbers. A middle-aged woman engineer holds a pencil over an open notebook, another engineer considers a removable bridge section. Real human concentration. Quiet dark left third consisting of shadowed interior wall and edge of shelves, useful for white title. Steel blue twilight outside, charcoal shadows, restrained amber work lights and subtle teal accents. Photoreal concept photograph, wide lens with credible perspective and materials. No logos, text, watermarks, holograms, space ships, glowing AI brains, vegetation, gardens, farms, potted plants or agrarian imagery. Do not portray a guaranteed finished utopia.",
+  "original": {
+    "file": "five-horizons-hero.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "2760777a14b8d8388cec6a91f72f0440e3cf6689728161941ebdaea5046f59ad"
+  },
+  "variants": [
+    {
+      "file": "five-horizons-hero-768.webp",
+      "width": 768,
+      "height": 432,
+      "bytes": 55304
+    },
+    {
+      "file": "five-horizons-hero-1536.webp",
+      "width": 1536,
+      "height": 864,
+      "bytes": 150674
+    }
+  ],
+  "alt": "Engineers compare physical models of possible infrastructure stages in a design office overlooking urban construction.",
+  "caption": "An imagined planning studio comparing possible stages of infrastructure development. AI-generated concept image.",
+  "inspection": "Inspected: realistic indoor setting, human activity, no vegetation or holograms, dark space for headings; an imagined setting, not a record of an operating project."
+}

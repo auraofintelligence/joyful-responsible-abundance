@@ -1,0 +1,37 @@
+{
+  "created_date": "2026-11-06",
+  "generation_tool": "Built-in image_gen.imagegen",
+  "use_case": "photorealistic-natural",
+  "file": "industrial-feedback-hero.png",
+  "title": "A speculative orbital industrial capability",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "bytes": 2463930,
+  "sha256": "5a41296f08efdd949f8659d550535e9a9b21d48e2926e4def9b8dfb9eeafa92b",
+  "prompt": "Use case: photorealistic-natural. Asset type: original landscape 16:9 website hero concept photograph. Wide cinematic framing, physically grounded materials, charcoal and steel blue with restrained amber and teal light. Keep the left third dark and visually quiet for white website headings; focal action and detail centre-right. No text, labels, branding, logos, watermarks, holograms, floating interfaces, gardens, farms or agrarian imagery. Imagined concept scene, not documentation of an operating project. Primary request: a grand, credible speculative orbital construction and manufacturing spacecraft above Earth, photographed as a future space-mission concept. The right two-thirds show a coherent engineered assembly: pressurised cylindrical modules, a structural truss, bolted equipment pallets and thermal radiators, neatly connected dark photovoltaic arrays, a realistic articulated robotic arm handling a cargo or truss segment close to a docking fixture. Hardware connects plausibly, with attachment points, restrained wiring and multilayer insulation, not an arbitrary cluster of floating pieces. Earth's blue curved limb, white cloud systems and atmospheric rim occupy the lower-right background, giving scale and beauty. Black space remains open and quiet on the left. Sunlight grazes metallic edges with pale amber highlights and faint teal Earthshine, photographic NASA-mission-like material detail. No spacecraft lettering, no agency emblems, no people, no fantasy weapons, no glowing engines or space-battle imagery. This is a clearly speculative industrial future, not a claim about an existing space station.",
+  "transparent_background": false,
+  "alt": "An imagined orbital manufacturing spacecraft uses a robotic arm beside cargo pallets, truss structures, cylindrical modules and solar arrays above Earth's curved blue horizon.",
+  "caption": "A speculative orbital construction and manufacturing scene above Earth. AI-generated concept image, not a photograph of an operating project.",
+  "conceptual_status": "AI-generated concept photograph. Imagined scene, not documentary evidence of an operating facility.",
+  "visual_review": "Visually inspected. A detailed modular spacecraft and robotic arm occupy the centre and right above Earth, with connected trusses, cargo pallets, radiators and solar panels. The upper-left is quiet black space, while hardware crosses the lower-left. The image is explicitly speculative; it is not presented as an existing station or programme.",
+  "web_delivery": [
+    {
+      "file": "industrial-feedback-hero-768.webp",
+      "dimensions": [
+        768,
+        432
+      ],
+      "bytes": 86288
+    },
+    {
+      "file": "industrial-feedback-hero-1536.webp",
+      "dimensions": [
+        1536,
+        864
+      ],
+      "bytes": 256842
+    }
+  ]
+}

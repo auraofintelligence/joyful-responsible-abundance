@@ -43,6 +43,6 @@ Topics: `joyful-responsible-abundance`, `artificial-intelligence`, `ai-alignment
 
 ## Images and rights
 
-Four AI-generated concept scenes illustrate possible settings for the proposals. Real Minjerribah photographs are separately identified and credited on the About page. Image provenance is recorded in `assets/images/image-credits.json`.
+All 21 pages have distinct hero images. The site uses 30 distinct images: 18 AI-generated concept scenes and 12 real photographs, including Australian research, Parliament, a public library, city life, solar rooftops and NASA space hardware. `data/visuals.json` assigns each hero and inline image. The About page provides an illustrated source-and-licence register; `assets/images/image-credits.json` records the same credits. Exact generation prompts remain in the linked provenance files.
 
 Original material is by Luke Nathan Hayes / Strange But True / Aura of Intelligence and follows `LICENCE.md`, the Strange But True Public Source Licence. Third-party photographs and linked source works retain their own rights and licences.

@@ -4,12 +4,16 @@ from html import escape as esc
 import json
 import re
 import shutil
+import hashlib
 from datetime import date
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / 'data'
 PREVIEW = json.loads((DATA / 'preview.json').read_text(encoding='utf-8'))
 SOVEREIGNTY = json.loads((DATA / 'sovereignty.json').read_text(encoding='utf-8'))
+VISUALS = json.loads((DATA / 'visuals.json').read_text(encoding='utf-8'))
+IMAGES = VISUALS['images']
+ASSET_VERSION = hashlib.sha256((ROOT/'assets/site.css').read_bytes()+(ROOT/'assets/site.js').read_bytes()).hexdigest()[:12]
 BASE = 'https://auraofintelligence.github.io/joyful-responsible-abundance/'
 REPO = 'https://github.com/auraofintelligence/joyful-responsible-abundance'
 TITLE = 'Joyful Responsible Abundance'
@@ -21,13 +25,6 @@ PARTS = {
  4: ('world.html', 'Cooperation across the world', 'Let local learning travel', 'Connect personal growth, AI alignment, peaceful cooperation and the proposed global festival in July 2035.', 'global-festival')
 }
 LINKS = PREVIEW['links']
-HERO_IMAGES = {
- 'choice-hero': ('People consider an imagined coastal city, with a large computing precinct beyond a community workshop and garden.', 'An imagined future, with choices still open. AI-generated concept image.'),
- 'community-hero': ('People learn and tend plants in an imagined Australian coastal commons.', 'An imagined coastal learning commons. AI-generated concept image.'),
- 'local-compute': ('People learn beside a secure computing cabinet in an imagined community workshop.', 'An imagined community computing workshop. AI-generated concept image.'),
- 'global-festival': ('People gather for music, art and conversation in an imagined coastal festival.', 'An imagined setting for the proposed 2035 global festival. AI-generated concept image.'),
- 'amity-jetty': ('People on the jetty at Amity Point, Minjerribah, beneath a sunset.', 'Amity Point, Minjerribah. Photograph by Pacificwizard, CC0.')
-}
 
 def link(label, href, cls=''):
     return f'<a href="{esc(href, quote=True)}"'+(f' class="{cls}"' if cls else '')+f'>{esc(label)}</a>'
@@ -61,28 +58,38 @@ def prose(text):
     if listed: out.append('</ol>')
     return ''.join(out)
 
-def figure(name,alt,caption,cls='media-wide',photo=False):
-    width,height=(960,720) if name=='point-lookout' else (1536,1152) if name=='amity-jetty' else (1536,1024)
+def image_caption(name):
+    info=IMAGES[name]
+    caption=esc(info['caption'])
+    if info['kind']=='photograph':
+        licence=link(info['licence'],info['licence_url']) if info.get('licence_url') else esc(info['licence'])
+        caption+=f' Photograph: {esc(info["creator"])}. {licence}.'
+    return caption+' '+link('Image credits','about.html#image-'+name)
+
+def figure(name,alt=None,caption=None,cls='media-wide',photo=False):
+    info=IMAGES[name]
+    width,height=info['width'],info['height']
+    alt=alt or info['alt']
+    caption=caption or image_caption(name)
+    if height>width:cls+=' photo-portrait'
     loading='fetchpriority="high"' if cls=='hero-art' else 'loading="lazy"'
     return f'<figure class="{cls}"><img src="assets/images/{name}-1536.webp" srcset="assets/images/{name}-768.webp 768w, assets/images/{name}-1536.webp {width}w" sizes="(max-width: 760px) 100vw, 80vw" width="{width}" height="{height}" {loading} decoding="async" alt="{esc(alt,quote=True)}"><figcaption>{caption}</figcaption></figure>'
 
 def hero_media(name):
-    alt,caption=HERO_IMAGES[name]
-    height=864 if name=='choice-hero' else 1152 if name=='amity-jetty' else 1024
-    return f'<div class="hero-media"><img src="assets/images/{name}-1536.webp" srcset="assets/images/{name}-768.webp 768w, assets/images/{name}-1536.webp 1536w" sizes="100vw" width="1536" height="{height}" fetchpriority="high" decoding="async" alt="{esc(alt,quote=True)}"></div><div class="hero-shade" aria-hidden="true"></div>'
+    info=IMAGES[name]
+    width,height=info['width'],info['height']
+    return f'<div class="hero-media"><img src="assets/images/{name}-1536.webp" srcset="assets/images/{name}-768.webp 768w, assets/images/{name}-1536.webp {width}w" sizes="100vw" width="{width}" height="{height}" fetchpriority="high" decoding="async" alt="{esc(info["alt"],quote=True)}"></div><div class="hero-shade" aria-hidden="true"></div>'
 
 def hero_caption(name):
-    return '<div class="hero-caption wrap"><p>'+HERO_IMAGES[name][1]+' <a href="about.html#images">Image credits</a></p></div>'
+    return '<div class="hero-caption wrap"><p>'+image_caption(name)+'</p></div>'
 
-def page_head(kicker,title,deck,image=None):
+def page_head(kicker,title,deck):
     content=f'<div class="breadcrumb">{link("Home","index.html")} <span aria-hidden="true">/</span> {esc(kicker)}</div><p class="eyebrow">{esc(kicker)}</p><h1>{esc(title)}</h1><p class="lede">{deck}</p>'
-    if image:
-        return f'<header class="page-head page-hero">{hero_media(image)}<div class="wrap hero-content">{content}</div>{hero_caption(image)}</header>'
     return f'<header class="page-head wrap">{content}</header>'
 
 def reading(sections,top=''):
     toc=''.join(f'<li>{link(t,"#"+i)}</li>' for i,t,c in sections)
-    body=''.join(f'<section class="chapter" id="{i}"><h2>{esc(t)}</h2>{c}</section>' for i,t,c in sections)
+    body=''.join(f'<section class="chapter" id="{i}"><h2>{esc(t)}</h2>{c}'+(figure(VISUALS['inline'][i]) if i in VISUALS['inline'] else '')+'</section>' for i,t,c in sections)
     return f'{top}<div class="reading-layout wrap"><aside class="on-this-page"><details open><summary>On this page</summary><ol>{toc}</ol></details></aside><article class="prose">{body}</article></div>'
 
 def nextlinks(index):
@@ -96,6 +103,10 @@ def nextlinks(index):
     return '<nav id="page-navigation" class="page-nav wrap" aria-label="Previous and next pages">'+previous+position+following+'</nav>'
 
 def write_page(filename,title,description,body,image='choice-hero',category='Guide'):
+    image=VISUALS['heroes'][filename]
+    if filename!='index.html':
+        body,count=re.subn(r'<header class="page-head wrap">(.*?)</header>',lambda m:'<header class="page-head page-hero">'+hero_media(image)+'<div class="wrap hero-content">'+m.group(1)+'</div>'+hero_caption(image)+'</header>',body,count=1,flags=re.S)
+        if count!=1:raise ValueError('Missing page introduction: '+filename)
     PAGES.append(dict(file=filename,title=title,description=description,category=category))
     primary=[('start-here.html','Start here'),('explore.html','Explore the plan'),('sovereignty.html','Superintelligence'),('tools.html','Try the tools'),('library.html','Library')]
     nav=''.join(link(t,f, 'active' if f==filename else '') for f,t in primary)
@@ -103,11 +114,25 @@ def write_page(filename,title,description,body,image='choice-hero',category='Gui
     canonical=BASE+('' if filename=='index.html' else filename)
     schema=json.dumps({'@context':'https://schema.org','@type':'WebPage','name':title,'description':description,'url':canonical,'inLanguage':'en-AU','author':{'@type':'Person','name':'Luke Nathan Hayes'},'isPartOf':{'@type':'WebSite','name':TITLE,'url':BASE}},ensure_ascii=False)
     html=f'''<!doctype html>
-<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{esc(title)} | {TITLE}</title><meta name="description" content="{esc(description,quote=True)}"><meta name="theme-color" content="#0b1116"><link rel="canonical" href="{canonical}"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon.ico" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="manifest" href="site.webmanifest"><meta property="og:type" content="website"><meta property="og:title" content="{esc(title,quote=True)}"><meta property="og:description" content="{esc(description,quote=True)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{BASE}assets/images/{image}-1536.webp"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="assets/site.css"><script src="assets/site.js" defer></script><script type="application/ld+json">{schema}</script></head>
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{esc(title)} | {TITLE}</title><meta name="description" content="{esc(description,quote=True)}"><meta name="theme-color" content="#0b1116"><link rel="canonical" href="{canonical}"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon.ico" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="manifest" href="site.webmanifest"><meta property="og:type" content="website"><meta property="og:title" content="{esc(title,quote=True)}"><meta property="og:description" content="{esc(description,quote=True)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{BASE}assets/images/{image}-1536.webp"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="assets/site.css?v={ASSET_VERSION}"><script src="assets/site.js?v={ASSET_VERSION}" defer></script><script type="application/ld+json">{schema}</script></head>
 <body id="top"><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="wrap"><a class="brand" href="index.html" aria-label="Joyful Responsible Abundance home"><img class="brand-mark" src="favicon.svg" width="42" height="42" alt=""><span class="brand-words">Joyful Responsible<br>Abundance</span></a><nav class="main-nav" aria-label="Main navigation">{nav}<details class="nav-menu"><summary>All pages</summary><div>{menu_primary}{link('Site map','site-map.html')}{link('Project directory','projects.html')}{link('Words explained','glossary.html')}{link('About and image credits','about.html')}{link('Complete sovereignty paper','sovereignty-paper.html')}</div></details></nav></div></header>
 <main id="main">{body}</main>
 <footer class="site-footer"><!-- page-navigation --><div class="wrap footer-grid"><div><p class="eyebrow">An invitation to understand and participate</p><h2>More people with the means to act.</h2><p>Ideas, proposals and public tools by Luke Nathan Hayes.<br>Minjerribah on Quandamooka Country, Australia.</p></div><nav aria-label="Footer">{link('All pages','site-map.html')}{link('References and documents','library.html')}{link('Related projects','projects.html')}{link('Source repository',REPO)}{link('About and image credits','about.html')}{link('Public Source licence','LICENCE.md')}</nav></div><div class="wrap footer-note"><p>Reading edition · 5 November 2026 · Australian English. The papers distinguish working tools, proposed programmes and conditional future scenarios.</p><a href="#top" class="back-top">Back to top ↑</a></div></footer></body></html>'''
     (ROOT/filename).write_text(html,encoding='utf-8')
+
+def image_gallery():
+    concepts=sum(info['kind']=='concept' for info in IMAGES.values())
+    photos=sum(info['kind']=='photograph' for info in IMAGES.values())
+    out=f'<p>Every page has a distinct hero image. The collection combines {concepts} AI-generated concept scenes with {photos} real photographs. Photographs show existing places and equipment; concept images illustrate possible settings for the proposals.</p><div class="image-credit-grid">'
+    for name,info in IMAGES.items():
+        out+=f'<section id="image-{name}" class="image-credit"><img src="assets/images/{name}-768.webp" width="{info["width"]}" height="{info["height"]}" loading="lazy" decoding="async" alt="{esc(info["alt"],quote=True)}"><h3>{esc(info["title"])}</h3><p>{esc(info["caption"])}</p>'
+        if info['kind']=='photograph':
+            licence=link(info['licence'],info['licence_url']) if info.get('licence_url') else esc(info['licence'])
+            out+='<p>'+esc(info['creator'])+' · '+licence+'</p><p>'+esc(info.get('modifications','Resized and converted to WebP.'))+'</p><p>'+link('Original photograph and source',info['source'])+'</p>'
+        else:
+            out+='<p>'+link('Generation prompt and provenance',info['provenance'])+'</p>'
+        out+='</section>'
+    return out+'</div>'
 
 home='<section class="hero hero-home">'+hero_media('choice-hero')+'''<div class="wrap hero-content"><p class="eyebrow">Joyful Responsible Abundance · A whole-system proposal</p><h1>Our future is<br><span>still a choice.</span></h1><p class="hero-intro">Powerful intelligence is being built into the world. The choices we make now can spread its benefits, deepen dependence, or open new ways to live.</p><p class="hero-detail">Who owns it, who directs it and who has the means to take part will shape what comes next.</p><div class="actions"><a class="button" href="start-here.html">Explore the alternative <span aria-hidden="true">↗</span></a><a class="button secondary" href="sovereignty.html">Understand what is at stake</a></div></div>'''+hero_caption('choice-hero')+'''</section>
 <section class="choice-section wrap"><div class="section-heading"><p class="eyebrow">Between the world we inherit and the world we build</p><h2>The balance takes work.</h2><p>More powerful technology does not settle how we live together. Ownership, health, time and public decisions influence whether people gain room to act or find their choices narrowing.</p></div><div class="choice-grid"><article class="choice-pressure"><p class="eyebrow">The pressure of the status quo</p><h3>Decisions made around us.</h3><p>People can depend on systems they have little time, information or authority to question.</p><ul><li>Essential tools and services can be controlled elsewhere, with little practical room to change provider or challenge the rules.</li><li>Poor health, confusing bills and financial strain can consume the time and energy needed to participate.</li><li>Claims can travel further than the evidence, while responsibility for a decision becomes difficult to trace.</li></ul><a href="sovereignty.html">Follow the questions of power and authority →</a></article><article class="choice-possibility"><p class="eyebrow">The alternative we can practise</p><h3>People equipped to decide.</h3><p>The proposal connects the conditions for a good life with the capacity to shape shared decisions.</p><ul><li>Shared computing, local skills and locally made or appropriately licensed open-source AI models can give communities more options.</li><li>Health, learning, continuity of care and clearer household bills can make more room for people to act.</li><li>Inspectable evidence, public responsibility and records of correction can make decisions easier to understand and challenge.</li></ul><a href="explore.html">Meet the components of the plan →</a></article></div><div class="choice-bridge"><p>Joyful Responsible Abundance is a direction to choose and keep working towards. It takes institutions, infrastructure and everyday practice, with room to disagree, test an idea and change course.</p><div class="choice-axis"><span>Understand the forces</span><span>Build shared capability</span><span>Practise the choice</span></div></div></section>
@@ -141,15 +166,12 @@ for n,(file,title,kicker,deck,img) in PARTS.items():
         content=prose(p['text'])
         if p['id']=='build': content+='<p class="source-note"><a href="tools.html#compute">Change the site count and cost in the calculator</a>.</p>'
         if p['id']=='gajra': content+='<p class="source-note">The festival and world-vote proposals are described in the <a href="'+LINKS['alignmentpaper']+'">human and SI alignment paper, page 25</a>, and the <a href="'+LINKS['ungapdf']+'">UNGA81 contribution, page 7</a>.</p>'
-        if p['id']=='verse': content+=figure('community-hero','An imagined coastal learning commons with a small group sharing a table.','Concept image of shared learning. AI-generated; the Verse Box remains a proposed trial.')
-        if p['id']=='compute': content+=figure('local-compute','People learning beside a rack of computers in an imagined Australian community workshop.','An imagined community computing and learning space. AI-generated concept image.')
-        if p['id']=='gajra': content+=figure('global-festival','An imagined global festival with music, art and people gathering beside the sea.','An imagined setting for the proposed July 2035 global festival. AI-generated concept image; a venue has not been selected in these papers.')
         sections.append((p['id'],p['title'],content))
-    write_page(file,title,deck,page_head('The whole-system proposal',title,deck,img)+reading(sections),img or 'choice-hero')
+    write_page(file,title,deck,page_head('The whole-system proposal',title,deck)+reading(sections),img or 'choice-hero')
 
 chapters=SOVEREIGNTY['chapters']
-sovereignty=page_head('Superintelligence and Australia','The race is also about who holds authority','A guide to the forces behind the AI race, and the choices Australia can make while its next layer of infrastructure is being built.','choice-hero')+'<section class="wrap intro-grid"><div><p class="eyebrow">Start with the words</p><h2>Intelligence needs a physical world to work in.</h2></div><div><p>An AI model is learned software. It runs on computers that need chips, power, cooling and communications. More capable systems also depend on people, investment, factories and the rules that govern access and use.</p><p><strong>Superintelligence</strong> describes a possible level of AI that exceeds human capability across many areas. The paper explores how progress towards that level could interact with industry, robotics and political authority. Its future figures are conditional scenarios, explained through their assumptions.</p><p><strong>Sovereignty</strong> asks who has effective authority. For a connected system, that includes who controls updates, permissions, data, maintenance and the power to pause or stop it.</p></div></section>'
-sovereignty+=figure('local-compute','An imagined local computing workshop with people discussing how the equipment works.','AI-generated concept image. A local installation makes one part of the larger infrastructure question tangible.','media-wide wrap')+'<section class="wrap path-list">'
+sovereignty=page_head('Superintelligence and Australia','The race is also about who holds authority','A guide to the forces behind the AI race, and the choices Australia can make while its next layer of infrastructure is being built.')+'<section class="wrap intro-grid"><div><p class="eyebrow">Start with the words</p><h2>Intelligence needs a physical world to work in.</h2></div><div><p>An AI model is learned software. It runs on computers that need chips, power, cooling and communications. More capable systems also depend on people, investment, factories and the rules that govern access and use.</p><p><strong>Superintelligence</strong> describes a possible level of AI that exceeds human capability across many areas. The paper explores how progress towards that level could interact with industry, robotics and political authority. Its future figures are conditional scenarios, explained through their assumptions.</p><p><strong>Sovereignty</strong> asks who has effective authority. For a connected system, that includes who controls updates, permissions, data, maintenance and the power to pause or stop it.</p></div></section>'
+sovereignty+='<section class="wrap path-list">'
 for i,ch in enumerate(chapters,1):
     file='sovereignty-'+ch['slug']+'.html'
     sovereignty+=f'<article><span class="path-number">{i:02}</span><div class="path-copy"><h2>{link(ch["title"],file)}</h2><p>{esc(ch["deck"])}</p></div></article>'
@@ -255,7 +277,7 @@ terms={
 glossary=page_head('Words explained','A shared vocabulary','Definitions you can return to as the ideas become more connected.')+'<div class="wrap prose glossary"><dl>'+''.join('<dt>'+esc(k)+'</dt><dd>'+esc(v)+'</dd>' for k,v in terms.items())+'</dl></div>'
 write_page('glossary.html','Words explained','Plain-language explanations of the terms used throughout the plan and sovereignty paper.',glossary)
 
-about_sections=[('author','About this work','<p>Luke Nathan Hayes develops the Aura of Intelligence, GAJRA Earth and connected proposals from Minjerribah on Quandamooka Country. This site brings together the whole-system preview and the reviewed paper on superintelligence and Australian sovereignty.</p><p>The intended audience includes people encountering these ideas for the first time, community organisers, researchers and readers who want to inspect the sources. The site explains each component before asking readers to follow its connections.</p><p><a href="'+REPO+'">Inspect this website’s source</a> · <a href="library.html">Read the original documents</a> · <a href="projects.html">Explore the related projects</a></p>'),('editions','How to read the editions','<p>The whole-system preview incorporates household bill de-slop, the 22-song album count, GAJRA Earth’s public alignment watch and the proposed July 2035 global festival marking Live Aid’s fiftieth anniversary. The sovereignty paper and its scenarios are dated 5 November 2026.</p><p>The introductory sovereignty chapters are educational adaptations. The complete reading edition preserves the source paper’s argument, links and calculation methods. The source documents are available to download.</p>'),('images','Images and photographs','<p>The opening coastal city, community commons, local computing workshop and future festival are AI-generated concept images created for this site. They illustrate proposed possibilities and choices about the future. These are imagined settings. Subtle butterflies appear as incidental details in some scenes.</p><p>The Amity Point sunset is a real photograph by Pacificwizard, released under CC0. <a href="https://commons.wikimedia.org/wiki/File:Amity_Point_Jetty_at_Sunset._North_Stradbroke_Island,_Queensland,_Australia.jpg">Original photograph and licence</a>.</p><p>The Point Lookout photograph is by John Fairbairn, 2020, and is used under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. It is resized for web delivery, with the original credit border preserved. <a href="https://commons.wikimedia.org/wiki/File:Point_Lookout,_North_Stradbroke_Island.jpg">Original photograph</a>.</p>'+figure('point-lookout','Waves breaking against the rocks at Point Lookout, North Stradbroke Island.','Point Lookout, Minjerribah. Photograph by John Fairbairn, CC BY 4.0.')),('access','Reading and accessibility','<p>All chapters and references are readable without JavaScript. Search, the calculator and the connection selector run in your browser. The site uses descriptive links, a heading hierarchy, keyboard controls, a skip link and a print layout. It includes a human-readable site map and a machine-readable sitemap.</p><p>Original material follows the <a href="LICENCE.md">Strange But True Public Source Licence</a>. Third-party photographs retain their stated licences.</p>')]
+about_sections=[('author','About this work','<p>Luke Nathan Hayes develops the Aura of Intelligence, GAJRA Earth and connected proposals from Minjerribah on Quandamooka Country. This site brings together the whole-system preview and the reviewed paper on superintelligence and Australian sovereignty.</p><p>The intended audience includes people encountering these ideas for the first time, community organisers, researchers and readers who want to inspect the sources. The site explains each component before asking readers to follow its connections.</p><p><a href="'+REPO+'">Inspect this website’s source</a> · <a href="library.html">Read the original documents</a> · <a href="projects.html">Explore the related projects</a></p>'),('editions','How to read the editions','<p>The whole-system preview incorporates household bill de-slop, the 22-song album count, GAJRA Earth’s public alignment watch and the proposed July 2035 global festival marking Live Aid’s fiftieth anniversary. The sovereignty paper and its scenarios are dated 5 November 2026.</p><p>The introductory sovereignty chapters are educational adaptations. The complete reading edition preserves the source paper’s argument, links and calculation methods. The source documents are available to download.</p>'),('images','Images and photographs',image_gallery()),('access','Reading and accessibility','<p>All chapters and references are readable without JavaScript. Search, the calculator and the connection selector run in your browser. The site uses descriptive links, a heading hierarchy, keyboard controls, a skip link and a print layout. It includes a human-readable site map and a machine-readable sitemap.</p><p>Original material follows the <a href="LICENCE.md">Strange But True Public Source Licence</a>. Third-party photographs retain their stated licences.</p>')]
 write_page('about.html','About the work and image credits','Authorship, edition details, image provenance, accessibility and reuse permissions.',page_head('About','The work, its sources and its place','A public reading space for a connected body of proposals and research.')+reading(about_sections))
 
 mapbody=page_head('Site map','Every page, in one place','Use this directory to read in sequence or find a particular topic.')+'<div class="wrap path-list">'
@@ -264,7 +286,7 @@ for category in ['Guide','Sovereignty','Source','Library']:
     mapbody+='<section><h2>'+category+'</h2><ul>'+''.join('<li>'+link(p['title'],p['file'])+'<p>'+esc(p['description'])+'</p></li>' for p in items)+'</ul></section>'
 mapbody+='</div>'
 write_page('site-map.html','Site map','A complete directory of the website’s guides, interactive tools, original papers, references and projects.',mapbody)
-(ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+BASE+p['file']+'</loc><lastmod>2026-11-05</lastmod></url>' for p in PAGES)+'</urlset>',encoding='utf-8')
+(ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+BASE+p['file']+'</loc><lastmod>2026-11-06</lastmod></url>' for p in PAGES)+'</urlset>',encoding='utf-8')
 (DATA/'page-index.json').write_text(json.dumps(PAGES,ensure_ascii=False,indent=2),encoding='utf-8')
 (ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+BASE+'sitemap.xml\n',encoding='utf-8')
 (ROOT/'llms.txt').write_text('# Joyful Responsible Abundance\n\nEducational reading site by Luke Nathan Hayes. Public source rights apply.\n\n'+ '\n'.join('- ['+p['title']+']('+BASE+p['file']+'): '+p['description'] for p in PAGES)+'\n\nOriginal documents: documents/whole-system-preview.docx and documents/superintelligence-and-australian-sovereignty.docx. The source paper is dated 5 November 2026; future figures are conditional scenarios. See LICENCE.md for reuse rights.\n',encoding='utf-8')

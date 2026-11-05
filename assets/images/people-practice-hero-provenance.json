@@ -1,0 +1,30 @@
+{
+  "slug": "people-practice-hero",
+  "type": "AI-generated concept image",
+  "tool": "OpenAI built-in image_gen",
+  "generated_date": "2026-11-06",
+  "prompt": "Use case: photorealistic-natural. Asset: cinematic 16:9 website hero, exactly wide landscape. In a realistic contemporary Australian urban library makerspace at evening, an ordinary adult woman learner works with a patient male mentor to assemble a small accessible tactile route model from cardboard and simple components at a worktable. Their personal laptop sits beside the physical artifact, displaying only softly out-of-focus, unreadable interface shapes: an everyday personal AI tool, not a magical device. Focus on the learner making and considering a choice, with mentor beside rather than above. Natural candid body language, realistic hands and materials. Photo-real concept photography with charcoal shadows, steel blue ambient light, restrained amber task lighting and a hint of teal. Quiet dark left third: a mostly shadowed library wall and very soft shelving, available for a white heading. People and meaningful work centre/right, wide cinematic framing with actual detail retained in shadows. No staged stock-photo grins. No text, logos, watermarks, holograms, glowing brain imagery, vegetation, gardens, farms, potted plants, agricultural scenery or outdoor landscape. This is an imagined future educational setting, not evidence of an operating project.",
+  "original": {
+    "file": "people-practice-hero.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "66b0a047a0ad3255182d6873a56dc633d34d80965dd01579de8b44f521e94666"
+  },
+  "variants": [
+    {
+      "file": "people-practice-hero-768.webp",
+      "width": 768,
+      "height": 432,
+      "bytes": 42400
+    },
+    {
+      "file": "people-practice-hero-1536.webp",
+      "width": 1536,
+      "height": 864,
+      "bytes": 111366
+    }
+  ],
+  "alt": "A learner and mentor build a practical object together in an urban Australian library studio.",
+  "caption": "An imagined library studio where a person can learn, create and direct their own tools. AI-generated concept image.",
+  "inspection": "Inspected: realistic indoor setting, human activity, no vegetation or holograms, dark space for headings; an imagined setting, not a record of an operating project."
+}

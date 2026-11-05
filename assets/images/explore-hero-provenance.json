@@ -1,0 +1,30 @@
+{
+  "title": "Explore Hero",
+  "type": "AI-generated concept image",
+  "generator": "OpenAI built-in image_gen",
+  "generated_date": "2026-11-06",
+  "prompt": "Use case: photorealistic-natural. Asset type: cinematic 16:9 website hero, broad urban architectural composition. Create an elevated architectural section-like photographic view across a contemporary Australian mixed urban precinct, with physically coherent real relationships between a tram stop, public library, health service, productive workshop spaces and apartments. Show believable facades, windows and a few cutaway or open building edges that reveal ordinary people using the spaces, without turning the image into a diagram. Contemporary Australian urban materials, concrete, brick, timber, rail infrastructure and realistic lighting. A coherent urban landscape at blue hour with warm practical windows, deep charcoal and steel-blue atmosphere, restrained amber and teal. Reserve the left third as quieter darker building mass and atmospheric urban shadow for a white heading added later. Main visual interest centre and right, with connected pedestrian routes, a tram, a library reading room, a clinic reception and a workshop all spatially plausible. Think serious architectural editorial photography of a human-scale city district. No labels, no readable text, no logos, no watermarks, no holograms, no robots, no gardens, farms or butterflies. Sophisticated material richness and purposeful social life.",
+  "alt": "An imagined urban precinct connects housing, a tram stop, civic learning, healthcare and workshops.",
+  "caption": "A connected urban precinct imagined as one place with many useful relationships.",
+  "file": "explore-hero.png",
+  "natural_width": 1672,
+  "natural_height": 941,
+  "native_output_filename": "exec-9296435e-6bae-4f42-a71c-c7da506b9851.png",
+  "sha256": "a39281bf3fb027cf985350bd4bec43da2ce454e9d6fa7aeb272b865e58f8f754",
+  "review": "Inspected for the requested subject, realistic material detail, quiet dark left-side composition, absence of prominent text or logos, and absence of garden or farm themes.",
+  "delivery_variants": [
+    {
+      "file": "explore-hero-768.webp",
+      "width": 768,
+      "height": 432,
+      "bytes": 74594
+    },
+    {
+      "file": "explore-hero-1536.webp",
+      "width": 1536,
+      "height": 864,
+      "bytes": 225782
+    }
+  ],
+  "processing": "Copied unchanged PNG from the built-in image generator; delivery variants resized and compressed with Pillow."
+}
