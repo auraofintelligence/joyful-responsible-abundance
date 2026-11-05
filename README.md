@@ -31,6 +31,8 @@ The authored data is in `data/preview.json` and `data/sovereignty.json`. Shared 
 
 Check internal links and anchors, keyboard navigation, mobile widths, the two calculators, search and the generated sitemap after changes. Keep the chapter content available without JavaScript. Preserve all source dates and distinctions between working tools, proposals, announced targets and conditional scenarios.
 
+Every page has shared footer navigation following the order in `data/page-index.json`, with destination titles, Previous and Next labels, and a page count. The homepage starts the sequence with a site-map option; the final site-map page provides a return to Home.
+
 ## Publishing and discovery
 
 GitHub Pages serves the repository root on `main`. The repository includes `.nojekyll`, canonical URLs, social sharing metadata, a favicon, `robots.txt`, `sitemap.xml`, `llms.txt` and a human-readable site map.
